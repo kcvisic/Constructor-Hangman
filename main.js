@@ -33,6 +33,7 @@ function handleDisplay() {
 }
 
 function handleGameStart(display) {
+    console.log("Guess an Animal")
     handleDisplay();
     var userInput = undefined;
     var promise = inquirer.prompt({
@@ -89,4 +90,3 @@ function handleGameStart(display) {
 
 
 handleGameStart(display)
-console.log(display)
