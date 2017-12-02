@@ -49,8 +49,6 @@ function handleGameStart(display) {
 
             for (var i = 0; i < display.letters.length; i++) {
 
-                
-
                 if (answer.userInput === display.letters[i].character) {
                     display.letters[i].guessed = true;
                     guessed = true;
@@ -64,7 +62,7 @@ function handleGameStart(display) {
                 misses--;
 
                 if(misses ===0){
-                    console.log("You Losse!")
+                    console.log("You Lose!")
                 }
                 else{
                       handleGameStart(display)
